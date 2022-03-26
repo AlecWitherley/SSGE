@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Send Mail</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.topright{position:absolute;right:0;top:0}
+.bgimg {
+  background-image: url('b.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.button {
+  background-color: solid #008CBA;
+  border: 2px solid #008CBA;
+  color: white;
+  border: 2px solid #008CBA;
+  border-radius: 8px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: Black; 
+  color: solid #008CBA; 
+  border: 2px solid #008CBA;
+  border-radius: 8px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+  .custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-padding-large w3-xlarge" style="top:10px;right:10px;position:static;min-width:100%;">
+    <div class="button" style="width:100%;top:0px;right:0px;position:static;">
+      <h6>Anonymous Emailer<br/>
+      Creates Random Email Address Using Site Extention<br/>
+      If you have any suggestions/problems with the site please let me know here: <br/>
+      clickdymc.click@greggdaegg.co.uk<br/>
+      I swear to god if you spam me tho<br/>
+      </h6></div>
+  </div>
+  <br/>
+  <br/>
+  <div class="w3-padding-large w3-xlarge" style="top:10px;right:10px;position:static;min-width:100%;">
+  <div class="button" style="width:100%;top:0px;right:0px;position:static;">
+    <form method="post" action="php.php">
+      <center><p>Name</p><input class="button button2" class="w3-jumbo w3-animate-top" name ="name" type="text" style="width:100%;position:static;" placeholder="EggyGreggy" maxlength="20"></center><br />
+    	<hr class="w3-border-grey" style="margin:auto;width:40%;">
+      <center><p>To Email</p><input class="button button2" class="w3-jumbo w3-animate-top" name ="toemail" type="text" style="width:100%;" placeholder="example@example.com"></center><br />
+    <hr class="w3-border-grey" style="margin:auto;width:40%;">	
+      <center><p>Note</p><input class="button button2" class="w3-jumbo w3-animate-top" name ="message" type="text" style="width:100%;" placeholder="Example Words" maxlength="20"></center><br />
+      <hr class="w3-border-grey" style="margin:auto;width:40%;">	
+      <center><a href="php.php"><button class="button button2"><h1 class="w3-jumbo w3-animate-top" style="width:80%;">Send</h1></button></a></center>
+    </form>
+  </div>
+      </div>
+	<div class="w3-display-bottomleft w3-padding-large" style="width:50%;">
+      Powered by <a href="dstudios/auth.html" target="_blank">ClickedyClickMCClickFace</a>
+  </div>
+</div>
+</body>
+</html>

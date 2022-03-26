@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\alecw\source\repos\Game Engine Dev\main.cpp(58,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Generating code
+  1 of 146 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Game Engine Dev.vcxproj -> C:\Users\alecw\source\repos\Game Engine Dev\x64\Release\Game Engine Dev.exe
